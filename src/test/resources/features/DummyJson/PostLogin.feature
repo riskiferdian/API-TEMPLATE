@@ -2,7 +2,7 @@ Feature: Login user
   @Tugas #PositiveCase
 
   Scenario: Lsogin with valid username and password
-    Given Lsogin with valid JSON
+    Given Lsogins with valid JSON
     When Ssend request post to login
     Then Sstatus code should be 200 OK
     And Vsalidate json schema success login

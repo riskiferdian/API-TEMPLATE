@@ -19,7 +19,7 @@ public class AuthLogin {
 
     //Positive Case
 
-    @Given("Lsogin with valid JSON")
+    @Given("Lsogins with valid JSON")
     public void loginWithValidJSON() {
         File jsonRequest = new File(Constant.JSON_REQUEST + "/Auth/LoginValid.json");
         authApi.postLogin(jsonRequest);
